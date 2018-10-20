@@ -7,6 +7,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 public class TrackerOneForAllApplication {
 
 	public static void main(String[] args) {
+		System.out.print("hello word i'm developper");
 		SpringApplication.run(TrackerOneForAllApplication.class, args);
 	}
 }
