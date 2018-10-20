@@ -1,0 +1,16 @@
+#compiled class file
+*.class
+
+*.log
+
+*.ctxt
+
+*.mtj.tmp/
+*.war
+*.jar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+.idea
+*.iml
