@@ -20,7 +20,7 @@ import org.springframework.web.filter.OncePerRequestFilter;
 
 @Configuration
 @EnableWebSecurity
-@EnableGlobalMethodSecurity(securedEnabled = false)
+@EnableGlobalMethodSecurity(securedEnabled = true)
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 
@@ -28,8 +28,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     protected void configure(HttpSecurity httpSecurity) throws Exception {
         httpSecurity.csrf().disable().authorizeRequests().antMatchers(HttpMethod.OPTIONS,"/**").permitAll();
-        httpSecurity.httpBasic().and().authorizeRequests().anyRequest().authenticated()
-                .antMatchers(HttpMethod.GET,"/sign_in").permitAll().and();
+        httpSecurity.httpBasic().and().authorizeRequests().anyRequest().authenticated().and();
 
 
     }

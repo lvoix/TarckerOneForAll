@@ -1,9 +1,13 @@
 package com.goldenway.entities;
 
 
+import org.springframework.data.jpa.domain.support.AuditingEntityListener;
+
 import javax.persistence.*;
+import java.io.Serializable;
 
 @Entity
+@Table(name = "CUSTOMER_USER")
 public class user {
 
     @Id

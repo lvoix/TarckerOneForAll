@@ -1,9 +1,10 @@
 package com.goldenway.services.Interface;
 
-import com.goldenway.dto.UserInfoDTO;
+import com.goldenway.entities.user;
 
 import java.util.List;
 
 public interface UserService {
-    public List<UserInfoDTO> getAllUsers();
+    public user create(user user);
+    public List<user> getAllUsers();
 }
